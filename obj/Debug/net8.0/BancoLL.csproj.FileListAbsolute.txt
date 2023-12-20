@@ -1,0 +1,14 @@
+C:\Users\leand\OneDrive\Área de Trabalho\ESTUDOS\C#\BancoLL\obj\Debug\net8.0\BancoLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\leand\OneDrive\Área de Trabalho\ESTUDOS\C#\BancoLL\obj\Debug\net8.0\BancoLL.AssemblyInfoInputs.cache
+C:\Users\leand\OneDrive\Área de Trabalho\ESTUDOS\C#\BancoLL\obj\Debug\net8.0\BancoLL.AssemblyInfo.cs
+C:\Users\leand\OneDrive\Área de Trabalho\ESTUDOS\C#\BancoLL\obj\Debug\net8.0\BancoLL.csproj.CoreCompileInputs.cache
+C:\Users\leand\OneDrive\Área de Trabalho\ESTUDOS\C#\BancoLL\bin\Debug\net8.0\BancoLL.exe
+C:\Users\leand\OneDrive\Área de Trabalho\ESTUDOS\C#\BancoLL\bin\Debug\net8.0\BancoLL.deps.json
+C:\Users\leand\OneDrive\Área de Trabalho\ESTUDOS\C#\BancoLL\bin\Debug\net8.0\BancoLL.runtimeconfig.json
+C:\Users\leand\OneDrive\Área de Trabalho\ESTUDOS\C#\BancoLL\bin\Debug\net8.0\BancoLL.dll
+C:\Users\leand\OneDrive\Área de Trabalho\ESTUDOS\C#\BancoLL\bin\Debug\net8.0\BancoLL.pdb
+C:\Users\leand\OneDrive\Área de Trabalho\ESTUDOS\C#\BancoLL\obj\Debug\net8.0\BancoLL.dll
+C:\Users\leand\OneDrive\Área de Trabalho\ESTUDOS\C#\BancoLL\obj\Debug\net8.0\refint\BancoLL.dll
+C:\Users\leand\OneDrive\Área de Trabalho\ESTUDOS\C#\BancoLL\obj\Debug\net8.0\BancoLL.pdb
+C:\Users\leand\OneDrive\Área de Trabalho\ESTUDOS\C#\BancoLL\obj\Debug\net8.0\BancoLL.genruntimeconfig.cache
+C:\Users\leand\OneDrive\Área de Trabalho\ESTUDOS\C#\BancoLL\obj\Debug\net8.0\ref\BancoLL.dll
