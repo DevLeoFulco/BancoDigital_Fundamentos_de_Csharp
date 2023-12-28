@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\leand\\OneDrive\\Área de Trabalho\\ESTUDOS\\C#\\BancoLL\\BancoLL.csproj": {}
+    "C:\\Users\\leand\\OneDrive\\Área de Trabalho\\Refactory\\BancoDigital_Fundamentos_de_Csharp\\BancoLL.csproj": {}
   },
   "projects": {
-    "C:\\Users\\leand\\OneDrive\\Área de Trabalho\\ESTUDOS\\C#\\BancoLL\\BancoLL.csproj": {
+    "C:\\Users\\leand\\OneDrive\\Área de Trabalho\\Refactory\\BancoDigital_Fundamentos_de_Csharp\\BancoLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\leand\\OneDrive\\Área de Trabalho\\ESTUDOS\\C#\\BancoLL\\BancoLL.csproj",
+        "projectUniqueName": "C:\\Users\\leand\\OneDrive\\Área de Trabalho\\Refactory\\BancoDigital_Fundamentos_de_Csharp\\BancoLL.csproj",
         "projectName": "BancoLL",
-        "projectPath": "C:\\Users\\leand\\OneDrive\\Área de Trabalho\\ESTUDOS\\C#\\BancoLL\\BancoLL.csproj",
+        "projectPath": "C:\\Users\\leand\\OneDrive\\Área de Trabalho\\Refactory\\BancoDigital_Fundamentos_de_Csharp\\BancoLL.csproj",
         "packagesPath": "C:\\Users\\leand\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\leand\\OneDrive\\Área de Trabalho\\ESTUDOS\\C#\\BancoLL\\obj\\",
+        "outputPath": "C:\\Users\\leand\\OneDrive\\Área de Trabalho\\Refactory\\BancoDigital_Fundamentos_de_Csharp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\leand\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

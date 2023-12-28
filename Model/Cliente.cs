@@ -1,13 +1,11 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 
 
 namespace BancoLL.Model
 {   
 
-       public class Movimentacao
+    public class Movimentacao
     {
         public string Tipo { get; set; }
         public decimal Valor { get; set; }
@@ -18,24 +16,20 @@ namespace BancoLL.Model
             Valor = valor;
         }
     }
-
-    public class Cliente
+    public abstract class Cliente
     {
         public string Codigo { get; private set; }
-        public string Nome { get;private set; }
-        public decimal Saldo { get;private set; }
+        public string Nome { get; private set; }
+        public decimal Saldo { get; private set; }
 
-     
+        public List<Movimentacao> Movimentacoes { get; private set; }
 
-        public List<Movimentacao> Movimentacoes {get; set;}
-
-        public Cliente()
-        {   
-            
+        protected Cliente()
+        {
             Movimentacoes = new List<Movimentacao>();
         }
 
-        public Cliente (string codigo, string nome ):this()
+        protected Cliente(string codigo, string nome) : this()
         {
             Nome = nome;
             Codigo = codigo;
@@ -43,42 +37,36 @@ namespace BancoLL.Model
 
         public void RealizarSaque(decimal valor)
         {
-            if(Saldo>valor)
+            if (Saldo >= valor && valor > 0)
             {
-                decimal valorMenosTaxa = DescontarTaxa(valor);
-                Saldo -= valor;
-                AdicionarMovimentacao("SAQUE", valorMenosTaxa);
-                Console.WriteLine($"Saque realizado com SUCESSO! Saldo: {Saldo}");
-            }else
+                AtualizarSaldo(valor, "SAQUE");
+            }
+            else
             {
-                Console.WriteLine("Saldo insuficiente!");
+                Console.WriteLine("Saldo insuficiente ou valor inválido!");
             }
         }
 
         public void RealizarDeposito(decimal valor)
         {
-            if (valor>=10)
+            if (valor >= 10)
             {
-                decimal valorMenosTaxa = DescontarTaxa(valor);
-                Saldo+= valorMenosTaxa;
-                AdicionarMovimentacao("DEPOSITO", valorMenosTaxa);
-                Console.WriteLine($"Deposito realizado com SUCESSO! Saldo: {Saldo}");
-            }else
-            {
-                Console.WriteLine("Valor deve ser maior ou igua a R$10,00");
+                AtualizarSaldo(valor, "DEPOSITO");
             }
-            
+            else
+            {
+                Console.WriteLine("Valor deve ser maior ou igual a R$10,00");
+            }
         }
 
-        private void AdicionarMovimentacao(string tipo, decimal valor)
+        private void AtualizarSaldo(decimal valor, string tipo)
         {
-            Movimentacoes.Add(new Movimentacao(tipo, DescontarTaxa(valor)));
+            decimal valorDescontado = DescontarTaxa(valor);
+            Saldo += tipo == "SAQUE" ? -valorDescontado : valorDescontado;
+            Movimentacoes.Add(new Movimentacao(tipo, valorDescontado));
+            Console.WriteLine($"{tipo} realizado com SUCESSO! Saldo: {Saldo}");
         }
 
-        public virtual decimal DescontarTaxa(decimal valor)
-        {
-            return valor;
-        }
-    }   
-
+        protected abstract decimal DescontarTaxa(decimal valor);
+    }
 }
